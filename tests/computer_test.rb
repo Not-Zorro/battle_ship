@@ -30,8 +30,8 @@ class ComputerTest < Minitest::Test
     assert_equal 3, x
   end
 
-  # def test_if_computer_fails
-  #   assert_equal "Computer couldn't place a ship. Please start again.", @computer.calculate_coordinates(@computer_cruiser)
-  # end
+  def test_if_computer_fails
+    assert_equal "Computer couldn't place a ship. Please start again.", @computer.calculate_coordinates(@computer_cruiser)
+  end
 
 end
