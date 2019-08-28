@@ -43,4 +43,10 @@ class Computer
        end
     end
   end
+
+  def computer_shot(board)
+    shot = board.cells.values.sample
+    shot.fire_upon
+    shot
+  end
 end
